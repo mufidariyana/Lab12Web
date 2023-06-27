@@ -1,0 +1,16 @@
+INFO - 2023-06-20 05:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-20 06:05:48 --> Cannot declare class App\Controllers\Artikel, because the name is already in use
+in APPPATH\Views\artikel\admin_index.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-20 06:16:26 --> Undefined variable: q
+in APPPATH\Views\artikel\admin_index.php on line 7.
+ 1 APPPATH\Views\artikel\admin_index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'C:\\xampp\\htdocs\\ci4\\app\\Views\\artikel\\admin_index.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ci4\\app\\Views\\artikel\\admin_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('artikel/admin_index', [], true)
+ 5 APPPATH\Controllers\Artikel.php(40): view('artikel/admin_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Artikel->admin_index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4\\public\\index.php')
